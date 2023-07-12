@@ -20,15 +20,15 @@ function invokeAction({ action, id, name, email, phone }) {
       break;
 
     case "get":
-      contactsModule.getContactById(id).then( (contact) => {
+      contactsModule.getContactById(id).then((contact) => {
         console.log(contact);
-      })
+      });
       break;
 
     case "add":
-      contactsModule.addContact(name,email,phone).then( (msg) => {
+      contactsModule.addContact(name, email, phone).then((msg) => {
         console.log(msg);
-      })
+      });
       break;
 
     case "remove":
